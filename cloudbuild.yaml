@@ -1,0 +1,8 @@
+steps:
+# Load Test
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['run','-i', 'loadimpact/k6', 'run', '-', '<test.js']
+# docker-compose
+#- name: 'gcr.io/cloud-builders/docker-compose'
+#  args: ['up', '-d']
+  
